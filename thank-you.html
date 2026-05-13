@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Limitless Mobile Auto Spa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#27a7ff;--blue2:#71d5ff;--text:#eef3f7;--muted:#aeb8c3;}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Inter,system-ui,sans-serif;color:var(--text);background:radial-gradient(circle at 18% 18%,rgba(39,167,255,.18),transparent 25%),radial-gradient(circle at 82% 20%,rgba(113,213,255,.1),transparent 25%),linear-gradient(180deg,#07111d 0%,#030407 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:58px 58px;opacity:.18}
+.page{min-height:100vh;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.page:before{content:"";position:absolute;left:-12vw;bottom:8vh;width:min(560px,80vw);height:min(560px,80vw);background:linear-gradient(135deg,rgba(39,167,255,.22),transparent 45%),url("https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1200&q=80");background-size:cover;background-position:center;border-radius:50%;opacity:.34;filter:grayscale(.35) contrast(1.2) brightness(.75);box-shadow:inset 0 0 90px rgba(0,0,0,.75),0 40px 120px rgba(0,0,0,.6);z-index:-1}
+.page:after{content:"";position:absolute;right:-170px;top:10%;width:430px;height:90vh;border-left:14px solid rgba(39,167,255,.58);border-radius:50%;transform:rotate(14deg);filter:drop-shadow(0 0 30px rgba(39,167,255,.22));z-index:-1}
+.container{width:min(calc(100% - 34px),1180px);margin:0 auto}
+.header{padding:34px 0 10px;display:flex;justify-content:center}
+.logo-wrap{width:min(520px,74vw);position:relative;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7)) drop-shadow(0 0 34px rgba(39,167,255,.25))}
+.logo-wrap img{width:100%;display:block}
+.main{flex:1;display:grid;place-items:center;padding:32px 0 46px}
+.panel{width:min(900px,100%);text-align:center;position:relative;padding:clamp(30px,6vw,58px);border-radius:34px;background:radial-gradient(circle at 50% 0%,rgba(39,167,255,.16),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.13);box-shadow:0 30px 90px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(18px);overflow:hidden}
+.panel:before{content:"";position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(113,213,255,.9),transparent);box-shadow:0 0 28px rgba(39,167,255,.7)}
+.check{width:82px;height:82px;margin:0 auto 24px;border-radius:50%;display:grid;place-items:center;color:var(--blue2);border:3px solid rgba(39,167,255,.78);box-shadow:0 0 32px rgba(39,167,255,.32),inset 0 0 24px rgba(39,167,255,.1);font-size:2.9rem;font-weight:900}
+h1{margin:0;font-family:Oswald,Impact,sans-serif;text-transform:uppercase;line-height:.92;font-size:clamp(3rem,8vw,6.7rem);letter-spacing:.045em;background:linear-gradient(180deg,#fff 0%,#d7dee5 44%,#7f8a96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{margin-top:16px;color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(1.05rem,3vw,1.55rem)}
+.line{width:min(560px,85%);height:1px;margin:26px auto;background:linear-gradient(90deg,transparent,rgba(39,167,255,.9),transparent);box-shadow:0 0 20px rgba(39,167,255,.6)}
+.message{max-width:660px;margin:0 auto;color:#e3e8ed;font-size:clamp(1rem,2.2vw,1.25rem);line-height:1.75}
+.message strong{color:white}
+.actions{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:34px}
+.btn{min-height:58px;display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:16px;padding:0 24px;font-weight:900;letter-spacing:.03em;text-decoration:none;border:1px solid rgba(255,255,255,.13);color:white;background:rgba(255,255,255,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+.btn.primary{color:#031521;background:linear-gradient(180deg,#7ed8ff 0%,#27a7ff 100%);box-shadow:0 16px 35px rgba(39,167,255,.26),inset 0 1px 0 rgba(255,255,255,.35);border-color:rgba(255,255,255,.25)}
+.features{margin-top:34px;padding:22px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;border-top:1px solid rgba(255,255,255,.08)}
+.feature{min-height:96px;padding:16px;border-radius:22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);text-align:left}
+.feature span{display:block;color:var(--blue2);font-size:1.45rem;margin-bottom:8px}.feature strong{display:block;color:white;font-size:.9rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px}.feature p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.45}
+.footer{border-top:1px solid rgba(255,255,255,.08);padding:22px 0 28px;background:rgba(0,0,0,.24);backdrop-filter:blur(14px)}
+.footer-grid{display:grid;grid-template-columns:1.1fr repeat(4,auto);gap:18px;align-items:center;color:#dce4ec;font-size:.94rem}.mini-logo{width:190px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5))}.footer-item{display:flex;align-items:center;gap:9px;white-space:nowrap}.footer-item a{color:#e7edf3;text-decoration:none}.copyright{margin-top:18px;text-align:center;color:#8793a0;font-size:.86rem;letter-spacing:.08em}
+@media(max-width:900px){.features{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.mini-logo{grid-column:1/-1;justify-self:center}}
+@media(max-width:620px){.page:before{width:92vw;height:92vw;left:-38vw;bottom:14vh;opacity:.24}.page:after{right:-245px;width:350px;opacity:.7}.header{padding-top:28px}.logo-wrap{width:min(340px,84vw)}.main{padding:26px 0 34px}.panel{padding:30px 18px;border-radius:26px}.check{width:70px;height:70px;font-size:2.35rem;margin-bottom:20px}.actions{flex-direction:column;gap:12px}.btn{width:100%;min-height:56px;border-radius:14px}.features{grid-template-columns:1fr;gap:10px}.feature{min-height:auto;text-align:center}.footer-grid{grid-template-columns:1fr;justify-items:center;text-align:center;gap:12px}.footer-item{white-space:normal;justify-content:center}.copyright{font-size:.76rem;letter-spacing:.06em}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="header"><a class="logo-wrap" href="/"><img src="./logo.svg" alt="Limitless Mobile Auto Spa logo"></a></header>
+<main class="main">
+<div class="container">
+<section class="panel">
+<div class="check">✓</div>
+<h1>Thank You!</h1>
+<div class="subtitle">Your quote request has been received.</div>
+<div class="line"></div>
+<p class="message">Thanks for reaching out to <strong>Limitless Mobile Auto Spa</strong>. Jay will review your request and get back to you shortly to confirm details and next steps.</p>
+<div class="actions">
+<a class="btn primary" href="tel:+14165877186">Call Jay Now<br>(416) 587-7186</a>
+<a class="btn" href="/">Back to Home</a>
+<a class="btn" href="https://g.page/r/CZr_5OZEfWl7EAE/review" target="_blank" rel="noopener noreferrer">Leave Us a Review ★★★★★</a>
+</div>
+<div class="features">
+<div class="feature"><span>▣</span><strong>We Come To You</strong><p>Convenient mobile service in your area.</p></div>
+<div class="feature"><span>◆</span><strong>Premium Results</strong><p>Clean interiors, wheels, and finishes.</p></div>
+<div class="feature"><span>◷</span><strong>Save Time</strong><p>Detailing around your schedule.</p></div>
+<div class="feature"><span>★</span><strong>Satisfaction Focused</strong><p>Built around quality and care.</p></div>
+</div>
+</section>
+</div>
+</main>
+<footer class="footer">
+<div class="container footer-grid">
+<img class="mini-logo" src="./logo.svg" alt="Limitless Mobile Auto Spa logo">
+<div class="footer-item">☎ <a href="tel:+14165877186">(416) 587-7186</a></div>
+<div class="footer-item">✉ <a href="mailto:mobileautodetailinglimitless@gmail.com">mobileautodetailinglimitless@gmail.com</a></div>
+<div class="footer-item">⌖ Brampton / Mississauga</div>
+<div class="footer-item">◷ Mon–Fri 7AM–8PM</div>
+</div>
+<div class="copyright">© 2026 Limitless Mobile Auto Spa. All Rights Reserved.</div>
+</footer>
+</div>
+</body>
+</html>
